@@ -1,0 +1,206 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.pageHeader {
+  margin-bottom: 20px;
+}
+
+.pageTitle {
+  font-size: 28px;
+  margin-bottom: 8px;
+  font-family: serif;
+  color: #fff;
+}
+
+.pageDescription {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.banner {
+  background-color: rgba(156, 130, 74, 0.1);
+  border: 1px solid var(--accent-gold);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+  color: var(--text-secondary);
+}
+
+.bannerIcon {
+  margin-right: 12px;
+  color: var(--accent-gold);
+}
+
+.bannerText strong {
+  display: block;
+  color: #dcdcdc;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.bannerText p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  flex: 1;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rightColumn {
+  height: 100%;
+}
+
+/* Common Card Styles */
+.bgCard, .uploadCard, .resultCard {
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid var(--border-color);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #dcdcdc;
+}
+
+.cardIcon {
+  margin-right: 8px;
+  color: var(--accent-gold);
+}
+
+.cardHeader h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* AI Background Video Card */
+.videoPlaceholder {
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  height: 200px;
+  position: relative;
+  border: 1px solid #333;
+}
+
+.videoInfo {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+}
+
+.videoLabel {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.videoSub {
+  font-size: 11px;
+  color: #666;
+}
+
+/* Upload Card */
+.uploadCard {
+  flex: 1;
+}
+
+.uploadArea {
+  border: 1px dashed #444;
+  border-radius: 12px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.02);
+  transition: all 0.2s;
+}
+
+.uploadArea:hover {
+  border-color: var(--accent-gold);
+  background-color: rgba(156, 130, 74, 0.05);
+}
+
+.uploadContent {
+  text-align: center;
+}
+
+.uploadIcon {
+  font-size: 32px;
+  margin-bottom: 8px;
+  opacity: 0.5;
+}
+
+.uploadMain {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.uploadSub {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Result Card */
+.resultCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.resultPlaceholder {
+  flex: 1;
+  background-color: var(--bg-primary);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+}
+
+.timeIcon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+
+.resultPlaceholder p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.startBtn {
+  margin-top: 24px;
+  background-color: #333; /* Disabled look */
+  color: #777;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: not-allowed;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

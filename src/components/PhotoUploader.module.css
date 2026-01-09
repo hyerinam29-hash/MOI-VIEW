@@ -1,0 +1,67 @@
+.card {
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  flex: 1; /* Fill remaining vertical space if needed */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #dcdcdc;
+}
+
+.icon {
+  margin-right: 8px;
+  color: var(--accent-gold);
+}
+
+.header h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.uploadArea {
+  border: 1px dashed #444;
+  border-radius: 12px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.uploadArea:hover, .dragActive {
+  border-color: var(--accent-gold);
+  background-color: rgba(156, 130, 74, 0.05);
+}
+
+.content {
+  text-align: center;
+}
+
+.uploadIcon {
+  font-size: 32px;
+  margin-bottom: 12px;
+  opacity: 0.5;
+}
+
+.mainText {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.subText {
+  font-size: 12px;
+  color: #666;
+}
+
+.hiddenInput {
+  display: none;
+}
